@@ -60,7 +60,7 @@ SECTIONS
 }
 
 PROVIDE(NMI = DefaultExceptionHandler);
-PROVIDE(HardFault = HardFaultHandler);
+PROVIDE(HardFault = HardFault);
 PROVIDE(MemManage = DefaultExceptionHandler);
 PROVIDE(BusFault = DefaultExceptionHandler);
 PROVIDE(UsageFault = DefaultExceptionHandler);
