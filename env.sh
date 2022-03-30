@@ -1,0 +1,1 @@
+export PATH=/home/ssl/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/puppetlabs/bin:/home/ssl/gcc-arm-none-eabi-10.3-2021.10/bin:/scratch/ssl/bitbake/bin:/home/ssl/.local/bin:/home/ssl/.local/bin:/home/ssl/bin:/home/ssl/gcc-arm-none-eabi-10.3-2021.10/bin:/scratch/ssl/bitbake/bin:/home/ssl/.local/bin
