@@ -1,8 +1,8 @@
-
+#![feature(core_intrinsics)]
 #![no_std]
 #![no_main]
 
-//extern crate rt;
+use core::intrinsics;
 
 use rt::entry;
 entry!(main);
@@ -16,6 +16,12 @@ fn main() -> ! {
     let _y = unsafe { &BSS };
     let _z = unsafe { &DATA };
 
-    loop {}
+    intrinsics::abort()
 }
 
+#[no_mangle]
+pub extern "C" fn HardFaultHandler() -> ! {
+    // do something interesting here
+    let _p = RODATA;
+    loop {}
+}

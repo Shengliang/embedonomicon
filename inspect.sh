@@ -1,5 +1,5 @@
-cargo objdump --bin app -- -d --no-show-raw-insn
-cargo objdump --bin app -- -s --section .vector_table
+cargo +nightly objdump --bin app -- -d --no-show-raw-insn
+cargo +nightly objdump --bin app -- -s --section .vector_table
 
 exit
 qemu-system-arm \
